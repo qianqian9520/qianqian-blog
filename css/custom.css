@@ -1,0 +1,43 @@
+/* 全局字号加大 */
+:root {
+  --global-font-size: 16px;
+}
+
+/* 首页大标题 */
+#site-title {
+  font-size: 3.2em !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#site-subtitle {
+  font-size: 1.6em !important;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* 顶部导航 */
+#nav {
+  font-size: 1.45em !important;
+}
+
+#nav .site-page {
+  font-size: 0.95em !important;
+}
+
+#nav .site-name {
+  font-size: 1.05em !important;
+}
+
+/* 侧边栏作者名 */
+.author-info-name {
+  font-size: 1.3em !important;
+}
+
+@media screen and (min-width: 768px) {
+  #site-title {
+    font-size: 4em !important;
+  }
+
+  #site-subtitle {
+    font-size: 1.8em !important;
+  }
+}
