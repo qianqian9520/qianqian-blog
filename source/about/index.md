@@ -19,6 +19,9 @@ type: "about"
 | 平台 | 链接 |
 | --- | --- |
 | GitHub 主页 | [github.com/qianqian9520](https://github.com/qianqian9520) |
+| 邮箱联系 | [qianqian9520@gmail.com](mailto:qianqian9520@gmail.com) |
+| 留言板 | [qianqian9520.top/message](https://qianqian9520.top/message/) |
+| RSS 订阅 | [atom.xml](https://qianqian9520.top/atom.xml) |
 | 博客仓库 | [qianqian-blog](https://github.com/qianqian9520/qianqian-blog) |
 | 讨论区 | [GitHub Discussions](https://github.com/qianqian9520/qianqian-blog/discussions) |
 | 博客域名 | [qianqian9520.top](https://qianqian9520.top) |

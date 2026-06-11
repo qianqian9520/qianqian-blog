@@ -15,6 +15,9 @@ type: "link"
 | 平台 | 链接 |
 | --- | --- |
 | GitHub 主页 | [qianqian9520](https://github.com/qianqian9520) |
+| 邮箱联系 | [qianqian9520@gmail.com](mailto:qianqian9520@gmail.com) |
+| 留言板 | [留言板](https://qianqian9520.top/message/) |
+| RSS 订阅 | [Atom Feed](https://qianqian9520.top/atom.xml) |
 | 博客讨论区 | [Discussions](https://github.com/qianqian9520/qianqian-blog/discussions) |
 
 > *"We're still pioneers."* —— 我们仍是先驱者。

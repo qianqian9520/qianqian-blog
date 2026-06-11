@@ -7,6 +7,7 @@ subtitle: '我们曾经仰望星空，思索我们在星辰中的位置'
 description: '记录技术探索与星际漫游 —— 爱是唯一可以穿越时间与空间的事物'
 keywords: 博客,技术,生活,星际穿越,Hexo
 author: 千千
+email: qianqian9520@gmail.com
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -90,6 +91,16 @@ search:
   field: post
   content: true
   format: html
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  order_by: -date
+  icon: /img/avatar.png
+  autodiscovery: true
+  content: true
 
 # Deployment
 deploy:

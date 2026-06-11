@@ -16,6 +16,7 @@
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^4.0.0",
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-search": "^2.4.3",
     "hexo-generator-tag": "^2.0.0",
@@ -26,5 +27,8 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-butterfly": "^5.5.5",
     "hexo-theme-landscape": "^1.0.0"
+  },
+  "devDependencies": {
+    "fontmin": "^1.1.1"
   }
 }
