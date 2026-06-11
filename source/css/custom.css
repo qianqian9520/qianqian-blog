@@ -240,23 +240,26 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 }
 
 /* 项目页：虫洞门户铺满上方 */
-#body-wrap.type-link #page-header.not-home-page {
+#body-wrap.type-link #page-header.not-home-page,
+#page-header[style*='project-bg'] {
   height: 50vh !important;
   min-height: 300px !important;
   max-height: 520px !important;
   background-color: #000 !important;
-  background-image: url('/img/link-bg.png') !important;
+  background-image: url('/img/project-bg.png') !important;
   background-size: cover !important;
   background-position: center 48% !important;
   background-repeat: no-repeat !important;
 }
 
-#body-wrap.type-link #page-header #page-site-info {
+#body-wrap.type-link #page-header #page-site-info,
+#page-header[style*='project-bg'] #page-site-info {
   top: 50% !important;
   transform: translateY(-50%);
 }
 
-#body-wrap.type-link #page-header.not-home-page:before {
+#body-wrap.type-link #page-header.not-home-page:before,
+#page-header[style*='project-bg']:before {
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
