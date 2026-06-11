@@ -1644,7 +1644,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: 13px;
+  --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #a4d8fa;
@@ -1862,13 +1862,6 @@ a {
 }
 a:hover {
   color: #49b1f5;
-}
-#site-title,
-#site-subtitle,
-.site-name,
-#aside-content .author-info-name,
-#aside-content .author-info-description {
-  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 .text-center {
   text-align: center;
