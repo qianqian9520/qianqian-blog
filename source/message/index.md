@@ -2,6 +2,7 @@
 title: 留言板
 date: 2026-06-11
 comments: true
+top_img: /img/message-bg.png
 ---
 
 欢迎来到留言板。
