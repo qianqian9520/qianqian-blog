@@ -7,6 +7,16 @@
   src: url('/fonts/ma-shan-zheng.ttf') format('truetype');
 }
 
+/* 取消入场动画，首屏即时显示 */
+#web_bg.bg-animation,
+#site-title,
+#site-subtitle,
+#content-inner,
+#footer,
+#page-header:not(.full_page) {
+  animation: none !important;
+}
+
 /* 全局字号 */
 :root {
   --global-font-size: 14px;
@@ -14,7 +24,7 @@
 
 /* 首页标题 - 毛笔字 */
 #site-title {
-  font-family: 'Ma Shan Zheng', cursive !important;
+  font-family: 'Ma Shan Zheng', 'STKaiti', 'KaiTi', serif !important;
   font-size: 3em !important;
   color: #ffffff !important;
   letter-spacing: 0.12em;
@@ -23,7 +33,7 @@
 
 #site-subtitle,
 #site-subtitle #subtitle {
-  font-family: 'Ma Shan Zheng', cursive !important;
+  font-family: 'Ma Shan Zheng', 'STKaiti', 'KaiTi', serif !important;
   font-size: 1.35em !important;
   color: rgba(255, 255, 255, 0.9) !important;
   letter-spacing: 0.08em;

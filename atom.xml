@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>千千</name>
+    <email>qianqian9520@gmail.com</email>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <icon>https://qianqian9520.top/img/avatar.png</icon>
+  <id>https://qianqian9520.top/</id>
+  <link href="https://qianqian9520.top/" rel="alternate"/>
+  <link href="https://qianqian9520.top/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, 千千</rights>
+  <subtitle>我们曾经仰望星空，思索我们在星辰中的位置</subtitle>
+  <title>千千的星际日志</title>
+  <updated>2026-06-11T09:53:44.249Z</updated>
+  <entry>
+    <author>
+      <name>千千</name>
+      <email>qianqian9520@gmail.com</email>
+    </author>
+    <category term="life" scheme="https://qianqian9520.top/categories/life/"/>
+    <category term="博客" scheme="https://qianqian9520.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="星际穿越" scheme="https://qianqian9520.top/tags/%E6%98%9F%E9%99%85%E7%A9%BF%E8%B6%8A/"/>
+    <content>
+      <![CDATA[<p>博客正式启航。</p><blockquote><p><strong>Do not go gentle into that good night.</strong><br>不要温和地走进那个良夜。</p></blockquote><p>这个站点使用 Hexo 与 Butterfly 主题搭建，背景是夜色下的城市运河——霓虹倒映在水中，像遥远星系投射来的光。愿我们在代码与文字之间，找到属于自己的引力弹弓。</p>]]>
+    </content>
+    <id>https://qianqian9520.top/2026/06/11/welcome-to-interstellar-blog/</id>
+    <link href="https://qianqian9520.top/2026/06/11/welcome-to-interstellar-blog/"/>
+    <published>2026-06-11T02:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>博客正式启航。</p>
+<blockquote>
+<p><strong>Do not go gentle into that good night.</strong><br>不要温和地走进那个良夜。</p>
+</blockquote>
+<p>这个站点使用 Hexo 与 Bu]]>
+    </summary>
+    <title>欢迎来到星际日志</title>
+    <updated>2026-06-11T09:53:44.249Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>千千</name>
+      <email>qianqian9520@gmail.com</email>
+    </author>
+    <category term="tech" scheme="https://qianqian9520.top/categories/tech/"/>
+    <category term="Hexo" scheme="https://qianqian9520.top/tags/Hexo/"/>
+    <category term="Butterfly" scheme="https://qianqian9520.top/tags/Butterfly/"/>
+    <category term="GitHub Pages" scheme="https://qianqian9520.top/tags/GitHub-Pages/"/>
+    <content>
+      <![CDATA[<h2 id="为什么选择-Hexo-Butterfly"><a href="#为什么选择-Hexo-Butterfly" class="headerlink" title="为什么选择 Hexo + Butterfly"></a>为什么选择 Hexo + Butterfly</h2><p>Hexo 是轻量、快速的静态博客框架；Butterfly 主题则提供了美观的首页大图、侧边栏卡片和本地搜索，非常适合个人博客。</p><h2 id="部署到-GitHub-Pages"><a href="#部署到-GitHub-Pages" class="headerlink" title="部署到 GitHub Pages"></a>部署到 GitHub Pages</h2><ol><li>安装 <code>hexo-deployer-git</code></li><li>在 <code>_config.yml</code> 中配置 <code>deploy</code> 指向 <code>gh-pages</code> 分支</li><li>在 <code>source/CNAME</code> 写入自定义域名</li><li>执行 <code>hexo deploy</code> 即可发布</li></ol><h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><p>在 DNS 控制台添加记录：</p><ul><li><strong>CNAME</strong>：<code>www</code> → <code>qianqian9520-pixel.github.io</code></li><li><strong>A 记录</strong>（根域名）：指向 GitHub Pages 的 IP 地址</li></ul><p>就像 Cooper 穿越虫洞一样，一次配置，全宇宙可访问。</p>]]>
+    </content>
+    <id>https://qianqian9520.top/2026/06/10/hexo-butterfly-setup/</id>
+    <link href="https://qianqian9520.top/2026/06/10/hexo-butterfly-setup/"/>
+    <published>2026-06-10T06:30:00.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="为什么选择-Hexo-Butterfly"><a href="#为什么选择-Hexo-Butterfly" class="headerlink" title="为什么选择 Hexo + Butterfly"></a>为什么选择 Hexo + Butterfly</]]>
+    </summary>
+    <title>用 Hexo + Butterfly 搭建个人博客</title>
+    <updated>2026-06-11T09:53:48.240Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>千千</name>
+      <email>qianqian9520@gmail.com</email>
+    </author>
+    <category term="life" scheme="https://qianqian9520.top/categories/life/"/>
+    <category term="成长" scheme="https://qianqian9520.top/tags/%E6%88%90%E9%95%BF/"/>
+    <category term="思考" scheme="https://qianqian9520.top/tags/%E6%80%9D%E8%80%83/"/>
+    <content>
+      <![CDATA[<p>《星际穿越》里，Miller 星球上的一小时等于地球上七年。时间在不同参照系里，流速截然不同。</p><p>学习也是如此：专注的一小时，可能抵得上散漫的一天。重要的不是花了多少时间，而是在哪个”引力场”里度过的。</p><p><strong>Murphy’s law doesn’t mean that something bad will happen. It means something will happen.</strong></p><p>保持好奇，保持行动。愿我们都能找到自己的坐标。</p>]]>
+    </content>
+    <id>https://qianqian9520.top/2026/06/08/gravity-and-growth/</id>
+    <link href="https://qianqian9520.top/2026/06/08/gravity-and-growth/"/>
+    <published>2026-06-08T12:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>《星际穿越》里，Miller 星球上的一小时等于地球上七年。时间在不同参照系里，流速截然不同。</p>
+<p>学习也是如此：专注的一小时，可能抵得上散漫的一天。重要的不是花了多少时间，而是在哪个”引力场”里度过的。</p>
+<p><strong>Murphy’s law d]]>
+    </summary>
+    <title>引力、时间与成长</title>
+    <updated>2026-06-11T09:53:51.611Z</updated>
+  </entry>
+</feed>
