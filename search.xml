@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>欢迎来到星际日志</title>
+      <link href="/2026/06/11/welcome-to-interstellar-blog/"/>
+      <url>/2026/06/11/welcome-to-interstellar-blog/</url>
+      
+        <content type="html"><![CDATA[<p>博客正式启航。</p><blockquote><p><strong>Do not go gentle into that good night.</strong><br>不要温和地走进那个良夜。</p></blockquote><p>这个站点使用 Hexo 与 Butterfly 主题搭建，背景是夜色下的城市运河——霓虹倒映在水中，像遥远星系投射来的光。愿我们在代码与文字之间，找到属于自己的引力弹弓。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> life </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 星际穿越 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用 Hexo + Butterfly 搭建个人博客</title>
+      <link href="/2026/06/10/hexo-butterfly-setup/"/>
+      <url>/2026/06/10/hexo-butterfly-setup/</url>
+      
+        <content type="html"><![CDATA[<h2 id="为什么选择-Hexo-Butterfly"><a href="#为什么选择-Hexo-Butterfly" class="headerlink" title="为什么选择 Hexo + Butterfly"></a>为什么选择 Hexo + Butterfly</h2><p>Hexo 是轻量、快速的静态博客框架；Butterfly 主题则提供了美观的首页大图、侧边栏卡片和本地搜索，非常适合个人博客。</p><h2 id="部署到-GitHub-Pages"><a href="#部署到-GitHub-Pages" class="headerlink" title="部署到 GitHub Pages"></a>部署到 GitHub Pages</h2><ol><li>安装 <code>hexo-deployer-git</code></li><li>在 <code>_config.yml</code> 中配置 <code>deploy</code> 指向 <code>gh-pages</code> 分支</li><li>在 <code>source/CNAME</code> 写入自定义域名</li><li>执行 <code>hexo deploy</code> 即可发布</li></ol><h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><p>在 DNS 控制台添加记录：</p><ul><li><strong>CNAME</strong>：<code>www</code> → <code>qianqian9520-pixel.github.io</code></li><li><strong>A 记录</strong>（根域名）：指向 GitHub Pages 的 IP 地址</li></ul><p>就像 Cooper 穿越虫洞一样，一次配置，全宇宙可访问。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> tech </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Butterfly </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>引力、时间与成长</title>
+      <link href="/2026/06/08/gravity-and-growth/"/>
+      <url>/2026/06/08/gravity-and-growth/</url>
+      
+        <content type="html"><![CDATA[<p>《星际穿越》里，Miller 星球上的一小时等于地球上七年。时间在不同参照系里，流速截然不同。</p><p>学习也是如此：专注的一小时，可能抵得上散漫的一天。重要的不是花了多少时间，而是在哪个”引力场”里度过的。</p><p><strong>Murphy’s law doesn’t mean that something bad will happen. It means something will happen.</strong></p><p>保持好奇，保持行动。愿我们都能找到自己的坐标。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> life </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成长 </tag>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
