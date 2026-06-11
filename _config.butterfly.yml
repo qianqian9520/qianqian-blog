@@ -94,7 +94,7 @@ category_img:
 #  - category name: xxxxx
 category_per_img:
   tech: /img/tech-rocket-bg.png
-  life: /img/life-star-bg.png
+  life: /img/life-mountain-bg.png
 
 # The background image of footer
 footer_img: false
@@ -1075,7 +1075,7 @@ inject:
     - <link rel="preload" href="/img/bg.png" as="image" fetchpriority="high">
     - <link rel="preload" href="/fonts/ma-shan-zheng.ttf" as="font" type="font/ttf" crossorigin>
     - <link rel="alternate" type="application/atom+xml" title="千千的星际日志" href="/atom.xml">
-    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/custom.css?v=20260612">
   bottom:
     # - <script src="xxxx"></script>
 
