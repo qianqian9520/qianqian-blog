@@ -1,69 +1,39 @@
-/* 本地艺术字体 */
-@font-face {
-  font-family: 'ZCOOL QingKe HuangYou';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/zcool-qingke-huangyou.ttf') format('truetype');
-}
-
-/* 全局字号微调 */
+/* 全局字号 +1 */
 :root {
-  --global-font-size: 13px;
+  --global-font-size: 14px;
 }
 
-/* 首页大标题 - 艺术字 */
+/* 首页标题 */
 #site-title {
-  font-family: 'ZCOOL QingKe HuangYou', cursive !important;
-  font-size: 2.8em !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.18em;
-  background: linear-gradient(180deg, #ffffff 0%, #ffe8a3 35%, #ffb84d 70%, #ff8c00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  filter: drop-shadow(0 0 18px rgba(255, 180, 60, 0.7)) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
+  font-size: 2.5em !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-#site-subtitle,
-#site-subtitle #subtitle {
-  font-family: 'ZCOOL QingKe HuangYou', cursive !important;
-  font-size: 1.2em !important;
-  color: rgba(255, 235, 180, 0.95) !important;
-  -webkit-text-fill-color: rgba(255, 235, 180, 0.95) !important;
-  letter-spacing: 0.1em;
-  text-shadow: 0 0 16px rgba(255, 200, 100, 0.6), 1px 1px 8px rgba(0, 0, 0, 0.6);
-}
-
-/* 顶部导航站名 */
-#nav .site-name {
-  font-family: 'ZCOOL QingKe HuangYou', cursive !important;
-  font-size: 1em !important;
-  letter-spacing: 0.08em;
+#site-subtitle {
+  font-size: 1.25em !important;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* 顶部导航 */
 #nav {
-  font-size: 1.1em !important;
+  font-size: 1.2em !important;
 }
 
 #nav .site-page {
-  font-size: 0.75em !important;
+  font-size: 0.8em !important;
 }
 
 /* 侧边栏作者名 */
 .author-info-name {
-  font-family: 'ZCOOL QingKe HuangYou', cursive !important;
   font-size: 1.1em !important;
 }
 
 @media screen and (min-width: 768px) {
   #site-title {
-    font-size: 3.4em !important;
+    font-size: 2.9em !important;
   }
 
-  #site-subtitle,
-  #site-subtitle #subtitle {
-    font-size: 1.35em !important;
+  #site-subtitle {
+    font-size: 1.4em !important;
   }
 }
