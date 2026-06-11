@@ -14,11 +14,20 @@ type: "about"
 - 学习就像穿越虫洞，看似遥远的目标，需要持续的加速度
 - 代码是通往未知星系的坐标
 
+## 找到我
+
+| 平台 | 链接 |
+| --- | --- |
+| GitHub 主页 | [github.com/qianqian9520](https://github.com/qianqian9520) |
+| 博客仓库 | [qianqian-blog](https://github.com/qianqian9520/qianqian-blog) |
+| 讨论区 | [GitHub Discussions](https://github.com/qianqian9520/qianqian-blog/discussions) |
+| 博客域名 | [qianqian9520.top](https://qianqian9520.top) |
+
+欢迎在文章下方留言评论（需 GitHub 账号），或来 GitHub 找我交流。
+
 ## 关于这个站点
 
 - 框架：[Hexo](https://hexo.io/)
 - 主题：[Butterfly](https://butterfly.js.org/)
+- 评论：[Giscus](https://giscus.app/)（基于 GitHub Discussions）
 - 部署：GitHub Pages
-- 域名：[qianqian9520.top](https://qianqian9520.top)
-
-欢迎通过 GitHub 与我交流。
