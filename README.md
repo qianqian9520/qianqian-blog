@@ -22,7 +22,7 @@ npx hexo clean && npx hexo generate && npx hexo deploy
 
 | 类型 | 主机记录 | 记录值 |
 | --- | --- | --- |
-| CNAME | www | qianqian9520-pixel.github.io |
+| CNAME | www | qianqian9520.github.io |
 | A | @ | 185.199.108.153 |
 | A | @ | 185.199.109.153 |
 | A | @ | 185.199.110.153 |

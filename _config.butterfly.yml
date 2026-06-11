@@ -48,7 +48,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/qianqian9520-pixel || Github || '#24292e'
+  fab fa-github: https://github.com/qianqian9520 || Github || '#24292e'
 
 # --------------------------------------
 # Image Settings
@@ -283,7 +283,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/qianqian9520-pixel
+      link: https://github.com/qianqian9520
   card_announcement:
     enable: true
     content: 欢迎来到芊芊的星际日志 —— 在数据的引力场中，寻找属于自己的虫洞。

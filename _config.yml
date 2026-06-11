@@ -94,5 +94,5 @@ search:
 # Deployment
 deploy:
   type: git
-  repo: https://github.com/qianqian9520-pixel/qianqian-blog.git
+  repo: https://github.com/qianqian9520/qianqian-blog.git
   branch: gh-pages
