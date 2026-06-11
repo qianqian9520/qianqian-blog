@@ -218,15 +218,23 @@ html[data-theme='light'] .social-icon:hover .fa-github {
   background-position: center 40% !important;
 }
 
-/* 留言板：按横幅高度完整显示，避免 cover 裁掉中间黑洞 */
+/* 留言板：铺满横幅，黑洞居中 */
 #body-wrap.type-message #page-header.not-home-page {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
   background-image: url('/img/message-bg.png') !important;
-  background-size: auto 100% !important;
-  background-position: center center !important;
+  background-size: cover !important;
+  background-position: center 50% !important;
+}
+
+#body-wrap.type-message #page-header #page-site-info {
+  top: 50% !important;
+  transform: translateY(-50%);
 }
 
 #body-wrap.type-message #page-header.not-home-page:before {
-  background-color: rgba(0, 0, 0, 0.12) !important;
+  background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
 /* 项目页：飞船与地平线居中偏上 */
