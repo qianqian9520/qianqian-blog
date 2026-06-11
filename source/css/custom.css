@@ -182,3 +182,20 @@ html[data-theme='dark'] #page-header.not-top-img #nav {
   background: rgba(8, 12, 20, 0.85) !important;
   backdrop-filter: blur(10px);
 }
+
+/* 社交图标对比度（明暗模式） */
+html[data-theme='dark'] .social-icon .fa-github {
+  color: #79c0ff !important;
+}
+
+html[data-theme='light'] .social-icon .fa-github {
+  color: #0969da !important;
+}
+
+html[data-theme='dark'] .social-icon:hover .fa-github {
+  color: #a5d6ff !important;
+}
+
+html[data-theme='light'] .social-icon:hover .fa-github {
+  color: #0550ae !important;
+}

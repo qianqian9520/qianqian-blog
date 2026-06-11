@@ -16,7 +16,6 @@ nav:
   fixed: true
 
 menu:
-  搜索: javascript:SearchWidget.open() || fas fa-search
   首页: / || fas fa-home
   关于我: /about/ || fas fa-user
   GitHub: https://github.com/qianqian9520 || fab fa-github
@@ -51,7 +50,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/qianqian9520 || GitHub 主页 || '#24292e'
+  fab fa-github: https://github.com/qianqian9520 || GitHub 主页 || '#58a6ff'
   fas fa-envelope: mailto:qianqian9520@gmail.com || 邮箱联系 || '#e74c3c'
   fas fa-rss: /atom.xml || RSS 订阅 || '#f39c12'
   fas fa-comment-dots: /message/ || 留言板 || '#3498db'
