@@ -212,10 +212,19 @@ html[data-theme='light'] .social-icon:hover .fa-github {
   background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
-#page-header[style*='about-bg'] {
-  background-image: url('/img/about-bg.png?v=2') !important;
+#page-header[style*='about-bg'],
+#body-wrap.type-about #page-header.not-home-page {
+  background-image: url('/img/about-bg.png') !important;
+  background-position: center 40% !important;
 }
 
-#page-header[style*='message-bg'] {
-  background-image: url('/img/message-bg.png?v=2') !important;
+/* 留言板：按横幅高度完整显示，避免 cover 裁掉中间黑洞 */
+#body-wrap.type-message #page-header.not-home-page {
+  background-image: url('/img/message-bg.png') !important;
+  background-size: auto 100% !important;
+  background-position: center center !important;
+}
+
+#body-wrap.type-message #page-header.not-home-page:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
 }
