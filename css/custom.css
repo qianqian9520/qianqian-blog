@@ -1,17 +1,40 @@
-/* 全局字号 +1 */
+/* 毛笔字体 - 马善政 */
+@font-face {
+  font-family: 'Ma Shan Zheng';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/ma-shan-zheng.ttf') format('truetype');
+}
+
+/* 全局字号 */
 :root {
   --global-font-size: 14px;
 }
 
-/* 首页标题 */
+/* 首页标题 - 毛笔字 */
 #site-title {
-  font-size: 2.5em !important;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  font-family: 'Ma Shan Zheng', cursive !important;
+  font-size: 3em !important;
+  color: #ffffff !important;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 20px rgba(255, 220, 150, 0.35), 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-#site-subtitle {
-  font-size: 1.25em !important;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+#site-subtitle,
+#site-subtitle #subtitle {
+  font-family: 'Ma Shan Zheng', cursive !important;
+  font-size: 1.35em !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  letter-spacing: 0.08em;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* 顶部导航站名 */
+#nav .site-name {
+  font-family: 'Ma Shan Zheng', cursive !important;
+  font-size: 1.05em !important;
+  letter-spacing: 0.06em;
 }
 
 /* 顶部导航 */
@@ -25,15 +48,17 @@
 
 /* 侧边栏作者名 */
 .author-info-name {
-  font-size: 1.1em !important;
+  font-family: 'Ma Shan Zheng', cursive !important;
+  font-size: 1.25em !important;
 }
 
 @media screen and (min-width: 768px) {
   #site-title {
-    font-size: 2.9em !important;
+    font-size: 3.6em !important;
   }
 
-  #site-subtitle {
-    font-size: 1.4em !important;
+  #site-subtitle,
+  #site-subtitle #subtitle {
+    font-size: 1.5em !important;
   }
 }
