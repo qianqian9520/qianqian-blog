@@ -286,7 +286,7 @@ aside:
       link: https://github.com/qianqian9520
   card_announcement:
     enable: true
-    content: 欢迎来到芊芊的星际日志 —— 在数据的引力场中，寻找属于自己的虫洞。
+    content: 欢迎来到千千的星际日志 —— 在数据的引力场中，寻找属于自己的虫洞。
   card_recent_post:
     enable: true
     # If set 0 will show all

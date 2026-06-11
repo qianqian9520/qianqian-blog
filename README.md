@@ -1,4 +1,4 @@
-# 芊芊的星际日志
+# 千千的星际日志
 
 基于 [Hexo](https://hexo.io/) + [Butterfly](https://butterfly.js.org/) 的个人博客。
 
