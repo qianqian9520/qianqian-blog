@@ -8,7 +8,7 @@ type: "link"
 
 | 名称 | 描述 | 链接 |
 | --- | --- | --- |
-| 芊芊星际日志 | 基于 Hexo + Butterfly 的个人博客 | [在线访问](https://qianqian9520.top) · [源码](https://github.com/qianqian9520/qianqian-blog) |
+| 千千星际日志 | 基于 Hexo + Butterfly 的个人博客 | [在线访问](https://qianqian9520.top) · [源码](https://github.com/qianqian9520/qianqian-blog) |
 
 ## 社交与联系
 
