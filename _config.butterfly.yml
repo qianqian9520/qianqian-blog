@@ -94,7 +94,7 @@ category_img:
 #  - category name: xxxxx
 category_per_img:
   tech: /img/tech-rocket-bg.png
-  life: /img/life-bg.png
+  life: /img/life-star-bg.png
 
 # The background image of footer
 footer_img: false
