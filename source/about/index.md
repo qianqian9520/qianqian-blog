@@ -2,7 +2,7 @@
 title: 关于我
 date: 2026-06-11
 type: "about"
-top_img: /img/about-bg.png
+top_img: /img/about-bg.png?v=2
 ---
 
 ## 你好，我是千千

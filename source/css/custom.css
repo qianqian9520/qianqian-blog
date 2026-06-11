@@ -199,3 +199,23 @@ html[data-theme='dark'] .social-icon:hover .fa-github {
 html[data-theme='light'] .social-icon:hover .fa-github {
   color: #0550ae !important;
 }
+
+/* 子页面横幅背景（关于我 / 留言板等） */
+#page-header.not-home-page {
+  background-color: #080c14 !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header.not-home-page:before {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+#page-header[style*='about-bg'] {
+  background-image: url('/img/about-bg.png?v=2') !important;
+}
+
+#page-header[style*='message-bg'] {
+  background-image: url('/img/message-bg.png?v=2') !important;
+}
