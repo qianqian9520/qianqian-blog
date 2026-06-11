@@ -228,3 +228,14 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 #body-wrap.type-message #page-header.not-home-page:before {
   background-color: rgba(0, 0, 0, 0.12) !important;
 }
+
+/* 项目页：飞船与地平线居中偏上 */
+#body-wrap.type-link #page-header.not-home-page {
+  background-image: url('/img/link-bg.png') !important;
+  background-size: cover !important;
+  background-position: center 38% !important;
+}
+
+#body-wrap.type-link #page-header.not-home-page:before {
+  background-color: rgba(0, 0, 0, 0.18) !important;
+}

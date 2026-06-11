@@ -1,7 +1,8 @@
 ---
 title: 项目
 date: 2026-06-11
-type: "link"
+type: link
+top_img: /img/link-bg.png
 ---
 
 ## 我的项目
