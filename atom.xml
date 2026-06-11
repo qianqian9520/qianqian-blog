@@ -19,9 +19,9 @@
       <email>qianqian9520@gmail.com</email>
     </author>
     <category term="life" scheme="https://qianqian9520.top/categories/life/"/>
-    <category term="随笔" scheme="https://qianqian9520.top/tags/%E9%9A%8F%E7%AC%94/"/>
     <category term="博客" scheme="https://qianqian9520.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     <category term="星际穿越" scheme="https://qianqian9520.top/tags/%E6%98%9F%E9%99%85%E7%A9%BF%E8%B6%8A/"/>
+    <category term="随笔" scheme="https://qianqian9520.top/tags/%E9%9A%8F%E7%AC%94/"/>
     <content>
       <![CDATA[<p>今天花了很多时间，一点点把这个博客从「能看」打磨成「像自己的地方」。</p><p>关于我是航天飞机冲向星环，留言板是黑洞，项目是飞船掠过地表灯火，技术笔记走进五维空间，生活随笔则停在星环与云海之间。每一页换背景的时候，我都在想：页面不该只是容器，它本身就该讲故事。</p><p>有时候图片对不准，横幅要么太小、要么偏上偏下，要么两侧露出不搭调的色块。调 CSS 的过程很像在引力场里找平衡点——挪一点 <code>background-position</code>，画面就完全不同。最后留言板留了两道黑边，让黑洞自然融进夜里；其他页面则尽量铺满，让光晕和星尘盖住整个上方。</p><blockquote><p><em>“We used to look up at the sky and wonder at our place in the stars, now we just look down and worry about our place in the dirt.”</em></p></blockquote><p>写博客大概也是这样：别总低头盯着琐碎，偶尔抬头，给自己留一片能仰望的星空。</p><p>今晚先写到这里。明天也许会有新的想法，也许没有——但页面已经在了，像坐标一样，等着被继续填写。</p><hr>]]>
     </content>
