@@ -263,25 +263,25 @@ html[data-theme='light'] .social-icon:hover .fa-github {
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
-/* 技术笔记分类：铺满整个上方横幅 */
-#page-header[style*='tech-bg'] {
+/* 技术笔记分类：火箭发射铺满上方 */
+#page-header[style*='tech-rocket-bg'] {
   height: 50vh !important;
   min-height: 300px !important;
   max-height: 520px !important;
   background-color: #000 !important;
-  background-image: url('/img/tech-bg.png') !important;
+  background-image: url('/img/tech-rocket-bg.png') !important;
   background-size: cover !important;
-  background-position: center 42% !important;
+  background-position: 62% center !important;
   background-repeat: no-repeat !important;
 }
 
-#page-header[style*='tech-bg'] #page-site-info {
+#page-header[style*='tech-rocket-bg'] #page-site-info {
   top: 50% !important;
   transform: translateY(-50%);
 }
 
-#page-header[style*='tech-bg']:before {
-  background-color: rgba(0, 0, 0, 0.15) !important;
+#page-header[style*='tech-rocket-bg']:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
 }
 
 /* 生活随笔分类：铺满整个上方横幅 */

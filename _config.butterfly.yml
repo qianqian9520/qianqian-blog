@@ -93,7 +93,7 @@ category_img:
 # Format:
 #  - category name: xxxxx
 category_per_img:
-  tech: /img/tech-bg.png
+  tech: /img/tech-rocket-bg.png
   life: /img/life-bg.png
 
 # The background image of footer
