@@ -321,3 +321,24 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 #page-header[style*='life-mountain-bg']:before {
   background-color: rgba(0, 0, 0, 0.12) !important;
 }
+
+/* 归档页：空间站铺满上方 */
+#page-header[style*='archive-station-bg'] {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
+  background-color: #000 !important;
+  background-image: url('/img/archive-station-bg.png') !important;
+  background-size: cover !important;
+  background-position: center 50% !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header[style*='archive-station-bg'] #page-site-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+#page-header[style*='archive-station-bg']:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}

@@ -76,7 +76,7 @@ default_top_img:
 index_img: /img/bg.png
 
 # The banner image of archive page
-archive_img:
+archive_img: /img/archive-station-bg.png
 
 # Note: tag page, not tags page
 tag_img:
@@ -1075,7 +1075,7 @@ inject:
     - <link rel="preload" href="/img/bg.png" as="image" fetchpriority="high">
     - <link rel="preload" href="/fonts/ma-shan-zheng.ttf" as="font" type="font/ttf" crossorigin>
     - <link rel="alternate" type="application/atom+xml" title="千千的星际日志" href="/atom.xml">
-    - <link rel="stylesheet" href="/css/custom.css?v=20260612b">
+    - <link rel="stylesheet" href="/css/custom.css?v=20260612c">
   bottom:
     # - <script src="xxxx"></script>
 
