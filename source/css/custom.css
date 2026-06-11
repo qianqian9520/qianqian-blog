@@ -270,3 +270,24 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 #page-header[style*='tech-bg']:before {
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
+
+/* 生活随笔分类：铺满整个上方横幅 */
+#page-header[style*='life-bg'] {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
+  background-color: #000 !important;
+  background-image: url('/img/life-bg.png') !important;
+  background-size: cover !important;
+  background-position: center 45% !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header[style*='life-bg'] #page-site-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+#page-header[style*='life-bg']:before {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
