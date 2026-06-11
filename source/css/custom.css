@@ -249,3 +249,24 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 #body-wrap.type-link #page-header.not-home-page:before {
   background-color: rgba(0, 0, 0, 0.18) !important;
 }
+
+/* 技术笔记分类：五维空间，两侧黑色衔接 */
+#page-header[style*='tech-bg'] {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
+  background-color: #000 !important;
+  background-image: url('/img/tech-bg.png') !important;
+  background-size: auto 100% !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header[style*='tech-bg'] #page-site-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+#page-header[style*='tech-bg']:before {
+  background-color: transparent !important;
+}
