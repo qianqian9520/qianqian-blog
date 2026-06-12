@@ -25,7 +25,7 @@
 /* 首页标题 - 毛笔字 */
 #site-title {
   font-family: 'Ma Shan Zheng', 'STKaiti', 'KaiTi', serif !important;
-  font-size: 3em !important;
+  font-size: 3.3em !important;
   color: #ffffff !important;
   letter-spacing: 0.12em;
   text-shadow: 0 0 20px rgba(255, 220, 150, 0.35), 2px 2px 10px rgba(0, 0, 0, 0.7);
@@ -34,7 +34,7 @@
 #site-subtitle,
 #site-subtitle #subtitle {
   font-family: 'Ma Shan Zheng', 'STKaiti', 'KaiTi', serif !important;
-  font-size: 1.35em !important;
+  font-size: 1.5em !important;
   color: rgba(255, 255, 255, 0.9) !important;
   letter-spacing: 0.08em;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
@@ -64,12 +64,12 @@
 
 @media screen and (min-width: 768px) {
   #site-title {
-    font-size: 3.6em !important;
+    font-size: 4em !important;
   }
 
   #site-subtitle,
   #site-subtitle #subtitle {
-    font-size: 1.5em !important;
+    font-size: 1.65em !important;
   }
 }
 
