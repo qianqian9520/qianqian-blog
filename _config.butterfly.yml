@@ -159,7 +159,7 @@ index_top_img_height:
 # The subtitle on homepage
 subtitle:
   enable: true
-  effect: false
+  effect: true
   typed_option:
   source: false
   sub:
