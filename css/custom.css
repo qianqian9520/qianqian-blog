@@ -74,17 +74,6 @@
 }
 
 /* 星空暗色主题 */
-@keyframes star-twinkle {
-  0% { opacity: 0.45; }
-  50% { opacity: 1; }
-  100% { opacity: 0.65; }
-}
-
-@keyframes star-drift {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(0, -18px, 0); }
-}
-
 html[data-theme='dark'] {
   --global-bg: #080c14;
   --card-bg: rgba(14, 20, 36, 0.92);
@@ -98,10 +87,14 @@ html[data-theme='dark'] body {
     radial-gradient(ellipse at 50% 0%, rgba(40, 60, 120, 0.28), transparent 55%),
     radial-gradient(ellipse at 15% 85%, rgba(60, 40, 100, 0.15), transparent 50%),
     radial-gradient(ellipse at 85% 90%, rgba(80, 50, 120, 0.14), transparent 45%);
-  background-attachment: fixed;
 }
 
-/* 星星层 1 - 闪烁 */
+/* 首页背景不 fixed，滚动更流畅 */
+#page-header.full_page {
+  background-attachment: scroll !important;
+}
+
+/* 星星层：静态显示，避免持续动画占用 GPU */
 html[data-theme='dark'] body::before {
   content: '';
   position: fixed;
@@ -125,10 +118,8 @@ html[data-theme='dark'] body::before {
     radial-gradient(1px 1px at 96% 38%, rgba(255, 255, 255, 0.45), transparent),
     radial-gradient(1px 1px at 8% 88%, rgba(255, 255, 255, 0.5), transparent),
     radial-gradient(1.5px 1.5px at 48% 92%, rgba(255, 255, 255, 0.6), transparent);
-  animation: star-twinkle 5s ease-in-out infinite alternate;
 }
 
-/* 星星层 2 - 漂移 + 错开闪烁 */
 html[data-theme='dark'] body::after {
   content: '';
   position: fixed;
@@ -150,7 +141,6 @@ html[data-theme='dark'] body::after {
     radial-gradient(1px 1px at 3% 65%, rgba(255, 255, 255, 0.4), transparent),
     radial-gradient(1px 1px at 56% 5%, rgba(255, 255, 255, 0.45), transparent),
     radial-gradient(1.5px 1.5px at 94% 88%, rgba(255, 230, 200, 0.5), transparent);
-  animation: star-twinkle 7s ease-in-out infinite alternate-reverse, star-drift 60s linear infinite;
 }
 
 html[data-theme='dark'] #body-wrap,
@@ -161,10 +151,9 @@ html[data-theme='dark'] #sidebar {
 
 html[data-theme='dark'] .card-widget,
 html[data-theme='dark'] .recent-post-item {
-  background: rgba(16, 22, 40, 0.88) !important;
+  background: rgba(16, 22, 40, 0.95) !important;
   border: 1px solid rgba(120, 150, 220, 0.12) !important;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35) !important;
-  backdrop-filter: blur(6px);
 }
 
 html[data-theme='dark'] .recent-post-item:hover {
@@ -179,8 +168,7 @@ html[data-theme='dark'] #footer {
 
 html[data-theme='dark'] #nav.fixed #nav,
 html[data-theme='dark'] #page-header.not-top-img #nav {
-  background: rgba(8, 12, 20, 0.85) !important;
-  backdrop-filter: blur(10px);
+  background: rgba(8, 12, 20, 0.92) !important;
 }
 
 /* 社交图标对比度（明暗模式） */
@@ -337,6 +325,12 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 #page-header[style*='archive-station-bg'] #page-site-info {
   top: 50% !important;
   transform: translateY(-50%);
+}
+
+.recent-post-item,
+.card-widget {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 200px;
 }
 
 #page-header[style*='archive-station-bg']:before {
