@@ -1,5 +1,5 @@
 ---
-title: 六月十一日：把星空装进网页里
+title: 把星空装进网页里
 date: 2026-06-11 21:00:00
 categories:
   - life
