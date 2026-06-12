@@ -64,7 +64,7 @@ favicon: /img/favicon.png
 
 avatar:
   img: /img/avatar.png
-  effect: true
+  effect: false
 
 # Disable all banner images
 disable_top_img: false
@@ -73,7 +73,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: /img/bg.png
+index_img: /img/bg.jpg
 
 # The banner image of archive page
 archive_img: /img/archive-station-bg.png
@@ -159,7 +159,7 @@ index_top_img_height:
 # The subtitle on homepage
 subtitle:
   enable: true
-  effect: true
+  effect: false
   typed_option:
   source: false
   sub:
@@ -424,7 +424,7 @@ rightside_item_order:
   show:
 
 # Animation for the bottom right config button
-rightside_config_animation: true
+rightside_config_animation: false
 
 # --------------------------------------
 # Global Settings
@@ -459,7 +459,7 @@ wordcount:
 busuanzi:
   site_uv: true
   site_pv: true
-  page_pv: true
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -547,7 +547,7 @@ share:
 comments:
   use: Giscus
   text: true
-  lazyload: false
+  lazyload: true
   count: true
   card_post_count: true
 
@@ -997,7 +997,7 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
@@ -1024,9 +1024,8 @@ instantpage: false
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
-  # Use browser's native lazyload instead of vanilla-lazyload
-  native: false
+  enable: true
+  native: true
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
@@ -1071,11 +1070,11 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    - <style id="critical-css">html{background:#080c14}html[data-theme=dark],html[data-theme=dark] body{background-color:#080c14!important}#page-header.full_page{background-color:#080c14!important;background-image:url(/img/bg.png)!important;background-size:cover!important;background-position:center!important}#site-title,#site-subtitle{color:#fff!important;font-family:'STKaiti','KaiTi','Ma Shan Zheng',serif!important;visibility:visible!important;opacity:1!important}</style>
-    - <link rel="preload" href="/img/bg.png" as="image" fetchpriority="high">
+    - <style id="critical-css">html{background:#080c14}html[data-theme=dark],html[data-theme=dark] body{background-color:#080c14!important}#page-header.full_page{background-color:#080c14!important;background-image:url(/img/bg.jpg)!important;background-size:cover!important;background-position:center!important}#site-title,#site-subtitle{color:#fff!important;font-family:'STKaiti','KaiTi','Ma Shan Zheng',serif!important;visibility:visible!important;opacity:1!important}</style>
+    - <link rel="preload" href="/img/bg.jpg" as="image" fetchpriority="high">
     - <link rel="preload" href="/fonts/ma-shan-zheng.ttf" as="font" type="font/ttf" crossorigin>
     - <link rel="alternate" type="application/atom+xml" title="千千的星际日志" href="/atom.xml">
-    - <link rel="stylesheet" href="/css/custom.css?v=20260612c">
+    - <link rel="stylesheet" href="/css/custom.css?v=20260612perf">
   bottom:
     # - <script src="xxxx"></script>
 
