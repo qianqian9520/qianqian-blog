@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>仿得物电商后端实战：我的一点记录</title>
+      <link href="/2026/06/13/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"/>
+      <url>/2026/06/13/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>最近把「得物实战」做完了。不是那种大而全的项目，但商品、订单、支付整条链路都自己搭了一遍，算是第一次把电商后端从浏览到付钱真正跑通。这篇就记一下我做了什么。</p><p>技术栈是 Spring Boot + MyBatis + MySQL，Redis 用来生成订单号，支付接支付宝。用户侧流程很直观：刷商品列表 → 点进详情选尺码 → 登录 → 提交订单 → 跳转支付宝 → 付完等回调改状态。看起来就几步，做起来模块不少。</p><h2 id="商品模块：SPU-和-SKU"><a href="#商品模块：SPU-和-SKU" class="headerlink" title="商品模块：SPU 和 SKU"></a>商品模块：SPU 和 SKU</h2><p>库表也是两张：<code>product</code> 存 SPU，<code>product_detail</code> 存 SKU，用 <code>product_id</code> 关联。列表接口查 SPU 分页，详情接口按 <code>productId</code> 把下面所有 SKU 拉出来。用户最终下单，关联的是 SKU，不是列表上那个 SPU。</p><p>商品列表还做了分页。前端传页码和每页条数，后端先 <code>count</code> 总数，再 <code>LIMIT</code> 查当前页。页码越界要处理，不然翻到不存在的页会出问题。</p><h2 id="登录：Session-校验"><a href="#登录：Session-校验" class="headerlink" title="登录：Session 校验"></a>登录：Session 校验</h2><p>下单前得知道是谁在买。项目用的是 Session。</p><p>前端调 <code>/api/user/checklogin</code>，后端从 Session 里看有没有登录信息。没登录就引导去登录，登录了才能下单。</p><p>有个细节印象很深：下单时 <code>userId</code> 必须从 Session 取，不能信前端传的。前端啥都能改，Session 是服务端管的。我也理解为啥——不然改个 <code>userId</code> 就能给别人下单了。</p><h2 id="订单模块：从提交到入库"><a href="#订单模块：从提交到入库" class="headerlink" title="订单模块：从提交到入库"></a>订单模块：从提交到入库</h2><p>用户选好尺码点「提交订单」，后端 <code>POST /api/order/add</code>，进来一个 <code>Order</code>，主要就 <code>productId</code> 有用，别的很多是后端填的。我当时的实现逻辑大概是：</p><p>校验 <code>productId</code> → 查 SKU 拿价格和商品信息 → 生成主键 → 状态设成待支付 → 用 Redisson 生成唯一 <code>orderNumber</code> → 转 DO 入库 → 返回订单。</p><p>订单号用 Redisson 而不是自己拼，是要求也是合理做法——分布式下要保证唯一，重复订单号后面支付、对账都麻烦。订单状态就几个：待支付、支付成功、支付失败、已关闭。一开始就是待支付，等支付回调再改。</p><h2 id="订单查询：别在循环里一个个查"><a href="#订单查询：别在循环里一个个查" class="headerlink" title="订单查询：别在循环里一个个查"></a>订单查询：别在循环里一个个查</h2><p>后面做了查最近支付成功订单的接口。列表要展示用户昵称、商品信息，如果只查 <code>order</code> 表，信息不够。我的做法是：</p><ol><li>先分页查订单</li><li>收集所有 <code>userId</code> 和 <code>productId</code></li><li>批量调 <code>UserService</code>、<code>ProductDetailService</code></li><li>内存里组装再返回</li></ol><p>一开始想在循环里一条条查用户和商品，后来知道这叫 N+1，订单一多就慢。批量查是小优化，但是真实项目里会遇到的那种。</p><h2 id="支付模块"><a href="#支付模块" class="headerlink" title="支付模块"></a>支付模块</h2><p>下单只是生成待支付订单，真正掏钱是支付模块。这块我花时间最多，也踩坑最多。</p><h3 id="发起支付"><a href="#发起支付" class="headerlink" title="发起支付"></a>发起支付</h3><p>用户点支付，调 <code>/api/alipay/pay</code>，传 <code>orderNumber</code>、金额这些。后端先记一条支付流水，状态 <code>PENDING</code>，再校验订单存在，然后调支付宝 SDK 组装请求，<code>pageExecute</code> 返回一段 HTML 表单，前端渲染后跳转支付宝收银台。</p><p>流水和订单分开存，因为一笔订单可能支付失败、用户重试，每次尝试都要有记录，方便后面查和对账。</p><h3 id="支付宝两条回调"><a href="#支付宝两条回调" class="headerlink" title="支付宝两条回调"></a>支付宝两条回调</h3><p>这块我一开始搞混了。付完钱之后有两条路：</p><ul><li><code>return_url</code>：用户浏览器跳回你的网站，看个成功页</li><li><code>notify_url</code>：支付宝服务器直接 POST 给你，告诉你付成了没有</li></ul><p>我一开始以为跳回成功页就算完事了。后来才明白——用户可能付完直接关页面，<code>return_url</code> 压根没触发。真正可靠的，是 <code>notify_url</code> 那条异步回调。而且支付宝会反复发，直到你回一个 <code>success</code> 才停。</p><p>所以更新订单状态，<strong>必须以 <code>notify_url</code> 为准</strong>。<code>return_url</code> 只做体验，不能当支付成功的依据。</p><h3 id="回调里干啥"><a href="#回调里干啥" class="headerlink" title="回调里干啥"></a>回调里干啥</h3><p>回调进来，<code>PayController</code> 接到请求，解析参数，交给 <code>PayService</code> 处理。先验签，确认是支付宝发的，不是别人伪造的。再看 <code>trade_status</code>，成了就：</p><ul><li>订单改支付成功</li><li>流水改 <code>SUCCESS</code></li><li>商品付款人数 +1</li></ul><p>失败就记失败状态。同一条回调可能收好几次，更新前先看订单是不是已经成功，别重复加付款人数。这就是幂等，支付场景里基本必做。</p><h2 id="并发和库存"><a href="#并发和库存" class="headerlink" title="并发和库存"></a>并发和库存</h2><p>高并发下的库存问题，这个我印象也深。很多人同时买同一 SKU，如果简单 <code>stock = stock - 1</code>，可能超卖——卖出去的比库存还多，电商里是大事故。</p><p>项目里用 Redis 做并发控制，保证库存不为负、付款人数不超过库存。具体实现课程有讲，核心就是：高并发下核心数据不能靠「先查再改」这种 naive 写法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> tech </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Spring Boot </tag>
+            
+            <tag> 电商 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>把星空装进网页里</title>
       <link href="/2026/06/11/june-11-starry-pages/"/>
       <url>/2026/06/11/june-11-starry-pages/</url>
