@@ -313,7 +313,8 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 }
 
 /* 归档页：空间站铺满上方 */
-#page-header[style*='archive-station-bg'] {
+#page-header[style*='archive-station-bg'],
+#page-header.post-bg[style*='archive-station-bg'] {
   height: 50vh !important;
   min-height: 300px !important;
   max-height: 520px !important;
@@ -336,5 +337,119 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 }
 
 #page-header[style*='archive-station-bg']:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 技术分类备用背景 */
+#page-header[style*='tech-bg'],
+#page-header.post-bg[style*='tech-bg'] {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
+  background-color: #000 !important;
+  background-image: url('/img/tech-bg.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header[style*='tech-bg'] #page-site-info,
+#page-header[style*='tech-bg'] #post-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+#page-header[style*='tech-bg']:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 生活分类备用背景 */
+#page-header[style*='life-bg'],
+#page-header.post-bg[style*='life-bg'] {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
+  background-color: #000 !important;
+  background-image: url('/img/life-bg.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header[style*='life-bg'] #page-site-info,
+#page-header[style*='life-bg'] #post-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+#page-header[style*='life-bg']:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 星空标签背景 */
+#page-header[style*='life-star-bg'],
+#page-header.post-bg[style*='life-star-bg'] {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
+  background-color: #000 !important;
+  background-image: url('/img/life-star-bg.png') !important;
+  background-size: cover !important;
+  background-position: center 55% !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header[style*='life-star-bg'] #page-site-info,
+#page-header[style*='life-star-bg'] #post-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+#page-header[style*='life-star-bg']:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 分类/友链汇总页背景 */
+#page-header[style*='link-bg'],
+#body-wrap.type-categories #page-header.not-home-page {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
+  background-color: #000 !important;
+  background-image: url('/img/link-bg.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#page-header[style*='link-bg'] #page-site-info,
+#body-wrap.type-categories #page-header #page-site-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+#page-header[style*='link-bg']:before,
+#body-wrap.type-categories #page-header.not-home-page:before {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 标签汇总页 */
+#body-wrap.type-tags #page-header.not-home-page {
+  height: 50vh !important;
+  min-height: 300px !important;
+  max-height: 520px !important;
+  background-color: #000 !important;
+  background-image: url('/img/life-star-bg.png') !important;
+  background-size: cover !important;
+  background-position: center 55% !important;
+  background-repeat: no-repeat !important;
+}
+
+#body-wrap.type-tags #page-header #page-site-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+#body-wrap.type-tags #page-header.not-home-page:before {
   background-color: rgba(0, 0, 0, 0.12) !important;
 }
