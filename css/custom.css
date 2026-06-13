@@ -269,7 +269,8 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 }
 
 /* 技术笔记分类：火箭发射铺满上方 */
-#page-header[style*='tech-rocket-bg'] {
+#page-header[style*='tech-rocket-bg'],
+#page-header.post-bg[style*='tech-rocket-bg'] {
   height: 50vh !important;
   min-height: 300px !important;
   max-height: 520px !important;
@@ -290,7 +291,8 @@ html[data-theme='light'] .social-icon:hover .fa-github {
 }
 
 /* 生活随笔分类：星空山脉铺满上方 */
-#page-header[style*='life-mountain-bg'] {
+#page-header[style*='life-mountain-bg'],
+#page-header.post-bg[style*='life-mountain-bg'] {
   height: 50vh !important;
   min-height: 300px !important;
   max-height: 520px !important;
