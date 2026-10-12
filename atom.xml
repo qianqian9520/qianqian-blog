@@ -12,7 +12,30 @@
   <rights>All rights reserved 2026, 千千</rights>
   <subtitle>我们曾经仰望星空，思索我们在星辰中的位置</subtitle>
   <title>千千的星际日志</title>
-  <updated>2026-06-13T14:05:33.590Z</updated>
+  <updated>2026-10-12T00:41:47.705Z</updated>
+  <entry>
+    <author>
+      <name>千千</name>
+      <email>qianqian9520@gmail.com</email>
+    </author>
+    <category term="life" scheme="https://qianqian9520.top/categories/life/"/>
+    <category term="随笔" scheme="https://qianqian9520.top/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="博客" scheme="https://qianqian9520.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <content>
+      <![CDATA[<p>好久没更新了。</p><p>中间忙别的事，博客就先晾着了。不是不想写，是一搁就容易搁久——等回过神来，已经隔了好几个月。</p><p>今天想说的其实很简单：准备重新开始更了。</p><p>不一定天天更新，也不一定篇篇都很长。能写就写一点，技术也好，随笔也好，先把这个小站再点亮。</p><p>星际日志重新连上信号。欢迎继续来坐坐。</p>]]>
+    </content>
+    <id>https://qianqian9520.top/2026/10/12/back-online/</id>
+    <link href="https://qianqian9520.top/2026/10/12/back-online/"/>
+    <published>2026-10-12T02:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>好久没更新了。</p>
+<p>中间忙别的事，博客就先晾着了。不是不想写，是一搁就容易搁久——等回过神来，已经隔了好几个月。</p>
+<p>今天想说的其实很简单：准备重新开始更了。</p>
+<p>不一定天天更新，也不一定篇篇都很长。能写就写一点，技术也好，随笔也好，先把这个小]]>
+    </summary>
+    <title>重新开机</title>
+    <updated>2026-10-12T00:41:47.705Z</updated>
+  </entry>
   <entry>
     <author>
       <name>千千</name>
@@ -33,7 +56,7 @@
 <p>技术栈是 Spring Boot + MyBatis + MySQL，Redis 用来生成订单号，支付]]>
     </summary>
     <title>仿得物电商后端实战：我的一点记录</title>
-    <updated>2026-06-13T14:05:33.590Z</updated>
+    <updated>2026-06-15T10:12:02.946Z</updated>
   </entry>
   <entry>
     <author>
